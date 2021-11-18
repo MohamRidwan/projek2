@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/',function(){
     return view('welcome');
+
+});
+Route::get('profil', function () {
+    return view('profil');
 });
 
 
@@ -32,7 +35,8 @@ Route::group (['prefix' => 'admin','middleware' => ['auth','role:admin']] ,funct
     });
     Route::resource('author', AuthorController::class);
     Route::resource('books', BookController::class);
+
     });
 
     // route tester member
-    
+

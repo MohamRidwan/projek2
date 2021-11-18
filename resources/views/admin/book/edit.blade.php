@@ -45,7 +45,11 @@
                         </div>
                         <div class="form-group">
                             <label for="">Masukan Status</label>
-                            <input type="text" name="status" value="{{$book->status}}" class="form-control @error('status') is-invalid @enderror">
+                            <select name="status" class="form-control @error('status') is-invalid @enderror">
+                                <option value="Barang Baru">Barang Baru</option>
+                                <option value="barang Bekas">Barang Bekas</option>
+                                <option value="barang Rusak">Barang Rusak</option>
+                            </select>
                              @error('status')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -53,7 +57,11 @@
                             @enderror
                         <div class="form-group">
                             <label for="">Masukan kategori</label>
-                            <input type="text" name="kategori" value="{{$book->kategori}}" class="form-control @error('kategori') is-invalid @enderror">
+                            <select name="kategori" class="form-control @error('kategori') is-invalid @enderror">
+                                <option value="Elaktronik">Elaktronik</option>
+                                <option value="Belajar">Belajar</option>
+                                <option value="Tumbuhan">Tumbuhan</option>
+                            </select>
                              @error('kategori')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

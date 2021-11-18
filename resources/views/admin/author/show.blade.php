@@ -22,6 +22,9 @@
                         <label for=""> Ruangan </label>
                         <input type="text" name="name" value="{{$author->name}}" class="form-control" readonly>
                     </div>
+
+
+
                     <div class="form-group">
                         <a href="{{url('admin/author')}}" class="btn btn-block btn-outline-primary">Kembali</a>
                     </div>

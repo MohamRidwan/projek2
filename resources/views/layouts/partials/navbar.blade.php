@@ -37,8 +37,8 @@
       </li>
 
       <!-- Messages Dropdown Menu -->
-      {{-- <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
+       {{-- <li class="nav-item dropdown"> --}}
+        {{-- <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
@@ -55,9 +55,9 @@
                 <p class="text-sm">Call me whenever you can...</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
-            </div>
+            </div> --}}
             <!-- Message End -->
-          </a>
+          {{-- </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
@@ -73,8 +73,8 @@
               </div>
             </div>
             <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
+          </a> --}}
+          {{-- <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
@@ -89,13 +89,13 @@
               </div>
             </div>
             <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
+          </a> --}}
+          {{-- <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
-      </li>
+      </li> --}}
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
+      {{-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
           <span class="badge badge-warning navbar-badge">15</span>
@@ -119,7 +119,7 @@
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
+        </div> --}}
       </li>
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -131,13 +131,16 @@
           <i class="fas fa-th-large"></i>
         </a>
     </li>
-    --}}
+
       <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
             {{ Auth::user()->name }}
         </a>
-
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <a href="{{ URL::to('profil') }}" class="nav-link active">
+            <p>Profil</p>
+          </a>
+<hr>
             <a class="dropdown-item" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">

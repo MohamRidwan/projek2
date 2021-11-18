@@ -9,7 +9,7 @@
                     </div>
                         <div class="card-body">
                         <center>
-                            Selamat Datang Di <strong>Larapus</strong>
+                            Selamat Datang Di <strong>INVETARIS SEKOLAH</strong>
                         </center>
                     </div>
                 </div>
